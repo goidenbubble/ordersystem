@@ -4,41 +4,36 @@
     android:layout_height="match_parent"
     android:orientation="vertical" 
     android:background="@drawable/a">
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="30dp"
-        android:text="订单详情" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="27dp"
-        android:text="消息" />
-
     <Button
         android:id="@+id/button4"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/button3"
-        android:layout_marginTop="15dp"
+        android:layout_centerVertical="true"
         android:text="公告" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button3"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="84dp"
+        android:text="消息" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+                android:layout_above="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:text="订单详情" />
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
         android:text="点餐" />
 
 </RelativeLayout>

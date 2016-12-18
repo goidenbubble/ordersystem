@@ -27,6 +27,38 @@
             android:label="@string/app_name">
             
         </activity>
+        <activity 
+            android:name="com.example.ordersys.Cook"
+            android:label="@string/app_name">
+            
+        </activity>
+        <activity 
+            android:name="com.example.ordersys.Manager"
+            android:label="@string/app_name">
+            
+        </activity>
+        <activity 
+            android:name="com.example.ordersys.one"
+            android:label="@string/app_name">
+            
+        </activity>
+        <activity 
+            android:name="com.example.ordersys.two"
+            android:label="@string/app_name">
+            
+        </activity>
+        <activity 
+            android:name="com.example.ordersys.last"
+            android:label="@string/app_name">           
+        </activity>
+         <activity 
+            android:name="com.example.ordersys.shop_cart"
+            android:label="@string/app_name">           
+        </activity>
+        <activity 
+            android:name="com.example.ordersys.calculate"
+            android:label="@string/app_name">           
+        </activity>
     </application>
 
 </manifest>
