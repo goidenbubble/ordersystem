@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="45dp" >
+
+          <ImageView
+              android:id="@+id/imageView1"
+              android:layout_width="65dp"
+              android:layout_height="42dp"
+              android:src="@drawable/kk" />
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+              <TextView
+                  android:id="@+id/tv11"
+                  android:layout_width="126dp"
+                  android:layout_height="wrap_content"
+                  android:text=" 热带海鲜焗饭" />
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" >
+                  <TextView
+                      android:id="@+id/textView2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="    ¥" />
+                  <TextView
+                      android:id="@+id/p11"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.80"
+                      android:text="288.00" />
+              </LinearLayout>
+          </LinearLayout>
+          <ImageView
+              android:id="@+id/reduce11"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:src="@drawable/reduce" />
+          <TextView
+              android:id="@+id/num11"
+              android:layout_width="40dp"
+              android:layout_height="80dp"
+              android:gravity="center_horizontal"    
+              android:textSize="20dp" />
+       
+          <ImageView
+              android:id="@+id/add11"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:src="@drawable/add" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+           <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="45dp" >
+
+          <ImageView
+              android:id="@+id/imageView1"
+              android:layout_width="65dp"
+              android:layout_height="42dp"
+              android:src="@drawable/ll" />
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+              <TextView
+                  android:id="@+id/tv12"
+                  android:layout_width="126dp"
+                  android:layout_height="wrap_content"
+                  android:text=" 香肠鸡肉蘑菇披萨" />
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" >
+                  <TextView
+                      android:id="@+id/textView2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="    ¥" />
+                  <TextView
+                      android:id="@+id/p12"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.80"
+                      android:text="468.00" />
+              </LinearLayout>
+          </LinearLayout>
+          <ImageView
+              android:id="@+id/reduce12"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:src="@drawable/reduce" />
+          <TextView
+              android:id="@+id/num12"
+              android:layout_width="40dp"
+              android:layout_height="80dp"
+              android:gravity="center_horizontal"     
+              android:textSize="20dp" />       
+          <ImageView
+              android:id="@+id/add12"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:src="@drawable/add" />
+      </LinearLayout>
+
+    </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+            <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="45dp" >
+
+          <ImageView
+              android:id="@+id/imageView1"
+              android:layout_width="65dp"
+              android:layout_height="42dp"
+              android:src="@drawable/mm" />
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+              <TextView
+                  android:id="@+id/tv13"
+                  android:layout_width="126dp"
+                  android:layout_height="wrap_content"
+                  android:text=" 芝士焗蚝" />
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" >
+                  <TextView
+                      android:id="@+id/textView2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="    ¥" />
+                  <TextView
+                      android:id="@+id/p13"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.80"
+                      android:text="368.00" />
+              </LinearLayout>
+          </LinearLayout>
+          <ImageView
+              android:id="@+id/reduce13"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:src="@drawable/reduce" />
+          <TextView
+              android:id="@+id/num13"
+              android:layout_width="40dp"
+              android:layout_height="80dp"
+              android:gravity="center_horizontal"      
+              android:textSize="20dp" />
+       
+          <ImageView
+              android:id="@+id/add13"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:src="@drawable/add" />
+      </LinearLayout>
+
+</LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+ 
+      </LinearLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" >
+
+          <Button
+              android:id="@+id/before"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentTop="true"
+              android:text="上一页" />
+
+          <Button
+              android:id="@+id/first"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:text="首页" />
+
+      </RelativeLayout>
+             <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="34dp"
+              android:layout_weight="0.13" >         
+
+              <ImageButton
+                  android:id="@+id/cart"
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="50dp"
+                  android:src="@drawable/shoppingcart" />
+
+             <ImageButton
+                 android:id="@+id/ok"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignTop="@+id/cart"
+                 android:layout_marginRight="50dp"
+                 android:src="@drawable/ok" />
+
+          </RelativeLayout>
+</LinearLayout>
+</LinearLayout>
