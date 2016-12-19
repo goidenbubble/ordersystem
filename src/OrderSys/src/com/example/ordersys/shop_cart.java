@@ -5,22 +5,27 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import android.R.integer;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
-public class shop_cart extends Activity{
+public class shop_cart<finall> extends Activity{
     String name1,name2,name3,name4,name5,name6,name7,name8,name9,name10,name11,name12,name13;
     int num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,num11,num12,num13;
     String p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13;    
     ImageButton ok,back;
+	int sum=5;
 	@Override		
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -36,14 +41,21 @@ public class shop_cart extends Activity{
 	 int[] c=new int[]{num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,num11,num12,num13};
 		ListView listView = (ListView)findViewById(R.id.lv1);
 		 List<Map<String,Object>> listItems=new ArrayList<Map<String,Object>>(); 			
-		int l=c.length;
+	int l=c.length;
 		for(int i=0;i<l;i++){
 			 Map<String,Object> item=new HashMap<String,Object>();	
-			if(c[i]>0){				  
+			if(c[i]>0){	
 	            item.put("name",a[i]);  
 	            item.put("price",b[i]);  
 	            item.put("num",c[i]);  	      
 	            listItems.add(item); 
+	            Log.i("test", "111111");
+	            int m=Integer.valueOf(c[i]);	 
+	            Log.i("test", String.valueOf(m));
+	           String k=String.valueOf(b[i]);
+	           Log.i("test", String.valueOf(k));
+				sum=Integer.parseInt(k)*m+sum;
+				 Log.i("test",String.valueOf(sum));
 			}
 			SimpleAdapter adapter = new SimpleAdapter(this,listItems, R.layout.item,   
 	                new String[]{"name", "price", "num"}, new int[]{R.id.t1, R.id.t2, R.id.t3});  
@@ -59,6 +71,10 @@ public class shop_cart extends Activity{
 			Intent intent=new Intent();
 			switch(imgv.getId()){
 			case R.id.ok:
+				SharedPreferences sp=getSharedPreferences("meal1", MODE_PRIVATE);
+				Editor editor=sp.edit();
+				editor.putInt("js", sum);
+				editor.commit();
 				intent.setClass(shop_cart.this,calculate.class);
 	    		startActivity(intent);
 	    		finish();
@@ -72,7 +88,7 @@ public class shop_cart extends Activity{
 		}
 		
 	};
-	private void getshare() {
+	public void getshare() {
 		// TODO Auto-generated method stub
 		SharedPreferences sp=getSharedPreferences("meal1", MODE_PRIVATE);
 	     name1=sp.getString("name1","");
